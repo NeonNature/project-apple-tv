@@ -6,6 +6,7 @@ import Devices from './components/Devices'
 import Faq from './components/Faq'
 import AppleOne from './components/AppleOne'
 import Footer from './components/Footer'
+import Routers from './components/Routers'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Devices />
       <Faq />
       <AppleOne />
+      <Routers />
       <Footer />
     </main>
   )
