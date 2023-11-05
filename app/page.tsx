@@ -10,16 +10,18 @@ import Routers from './components/Routers'
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <LandingVideo />
-      <Carousel />
-      <Lineup />
-      <Devices />
-      <Faq />
-      <AppleOne />
-      <Routers />
+    <>
+      <main>
+        <Navbar />
+        <LandingVideo />
+        <Carousel />
+        <Lineup />
+        <Devices />
+        <Faq />
+        <AppleOne />
+        <Routers />
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
