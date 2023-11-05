@@ -1,840 +1,337 @@
 .section-apple-one {
   padding: 25px 0 0;
+  .section-content {
+    width: 97%;
+    max-width: 1360px;
+    position: relative;
+    display: flex;
+    background-color: #f5f5f7;
+  }
+  .figure-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 3%;
+  }
+  .tile-image {
+    width: 544px;
+    height: 330px;
+    background-size: 544px 330px;
+    background-repeat: no-repeat;
+    background-image: url(/apple_one/apple_one.jpeg);
+    margin-top: 126px;
+    margin-bottom: 128px;
+    min-width: 544px;
+    margin-left: 6%;
+  }
+  .tile-copy-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 0%;
+    box-sizing: border-box;
+  }
+  .tile-copy-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .tile-logo {
+    width: 102px;
+    height: 33px;
+    background-size: 102px 33px;
+    background-repeat: no-repeat;
+    background-image: url(/apple_one/logo.png);
+  }
+  .tile-headline {
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 13px;
+  }
+  .button-custom-dark {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 28px;
+    border-radius: 980px;
+    background: #0071e3;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    letter-spacing: -0.022em;
+    min-width: 26px;
+    padding: 12px 22px;
+    font-size: 14px;
+    line-height: 1.4285914286;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family:
+      SF Pro Text,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-weight: 700;
+    background-color: #fff;
+    color: #1d1d1f;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1d1d1f;
+    &:focus {
+      box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      background: #006edb;
+    }
+    &:disabled {
+      cursor: default;
+      background: #0071e3;
+      color: #fff;
+      opacity: 0.32;
+    }
+    &:hover {
+      background: #0077ed;
+      background-color: #fff;
+      color: #1d1d1f;
+      opacity: 0.9;
+      text-decoration: none;
+      color: #fff;
+      background-color: #1d1d1f;
+      .icon-copy {
+        text-decoration: none;
+      }
+    }
+  }
+  .button-custom-dark.disabled {
+    cursor: default;
+    background: #0071e3;
+    color: #fff;
+    opacity: 0.32;
+  }
+  .button-custom-dark-inactive {
+    cursor: auto;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: initial;
+    -webkit-backdrop-filter: none;
+    &:hover {
+      color: #fff;
+      background-color: initial;
+      text-decoration: none;
+    }
+  }
+  .typography-router-headline {
+    .footnote-number {
+      font-size: 0.45em;
+    }
+    sup {
+      top: -0.5em;
+    }
+  }
+}
+sup.section-apple-one {
+  .typography-router-headline {
+    .footnote-number {
+      top: -0.86em;
+    }
+  }
+}
+sub.section-apple-one {
+  .typography-router-headline {
+    .footnote-number {
+      bottom: -0.36em;
+    }
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .section-apple-one {
+    .section-content {
+      max-width: 733px;
+    }
+    .figure-wrapper {
+      justify-content: center;
+      padding-left: 0;
+    }
+    .tile-image {
+      width: 283px;
+      height: 172px;
+      background-size: 283px 172px;
+      background-repeat: no-repeat;
+      margin-top: 96px;
+      margin-bottom: 98px;
+      margin-left: 3%;
+      min-width: auto;
+    }
+    .tile-copy-container {
+      align-items: center;
+      padding-left: 0%;
+      padding-right: 3%;
+    }
+    .tile-copy-wrapper {
+      margin-left: -14%;
+    }
+    .tile-logo {
+      width: 62px;
+      height: 21px;
+      background-size: 62px 21px;
+      background-repeat: no-repeat;
+    }
+    .tile-headline {
+      max-width: 552px;
+      margin-top: 13px;
+      width: 90%;
+      a {
+        font-size: 17px;
+        line-height: 1.4705882353;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        font-family:
+          SF Pro Text,
+          SF Pro Icons,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      sup {
+        a {
+          font-weight: inherit;
+        }
+      }
+    }
+    .button-custom-dark {
+      margin-top: 9px;
+      margin-bottom: 16px;
+    }
+    .typography-router-cta {
+      font-size: 17px;
+      line-height: 1.4705882353;
+      font-weight: 400;
+      letter-spacing: -0.022em;
+      font-family:
+        SF Pro Text,
+        SF Pro Icons,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+    }
+  }
 }
 
 @media only screen and (max-width: 734px) {
   .section-apple-one {
     padding: 0 0 15px;
+    .section-content {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+    .figure-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+    }
+    .tile-image {
+      width: 299px;
+      height: 182px;
+      background-size: 299px 182px;
+      background-repeat: no-repeat;
+      margin-top: 42px;
+      margin-bottom: 77px;
+      margin-left: 30px;
+    }
+    .tile-copy-container {
+      margin-left: 0;
+      padding-right: 0;
+    }
+    .tile-copy-wrapper {
+      width: auto;
+      margin-left: 0;
+      margin-top: 45px;
+    }
+    .tile-logo {
+      width: 62px;
+      height: 21px;
+      background-size: 62px 21px;
+      background-repeat: no-repeat;
+    }
+    .tile-headline {
+      max-width: 330px;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    .button-custom-dark {
+      border: 1px solid #fff;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #1d1d1f;
+        opacity: 0.9;
+      }
+    }
+    .button-custom-dark.small-solid {
+      background-color: #fff;
+      border: none;
+      color: #1d1d1f;
+      &:hover {
+        background-color: #fff;
+        border: none;
+        color: #1d1d1f;
+        opacity: 0.9;
+      }
+    }
   }
 }
-
-.section-apple-one .section-content {
-  width: 97%;
-  max-width: 1360px;
-  position: relative;
-  display: flex;
-  background-color: #f5f5f7;
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .section-content {
-    max-width: 733px;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .section-content {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-}
-
-.section-apple-one .figure-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 3%;
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .figure-wrapper {
-    justify-content: center;
-    padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .figure-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-  }
-}
-
-.section-apple-one .tile-image {
-  width: 544px;
-  height: 330px;
-  background-size: 544px 330px;
-  background-repeat: no-repeat;
-  background-image: url(/apple_one/apple_one.jpeg);
-  margin-top: 126px;
-  margin-bottom: 128px;
-  min-width: 544px;
-  margin-left: 6%;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5),
-  (min-resolution: 144dpi),
-  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-resolution: 1.5dppx) {
-  .section-apple-one .tile-image {
-    background-image: url(/apple_one/apple_one@2x.jpeg);
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-image {
-    width: 283px;
-    height: 172px;
-    background-size: 283px 172px;
-    background-repeat: no-repeat;
-    background-image: url(/apple_one/apple_one_medium.jpg);
-  }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
-  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-  .section-apple-one .tile-image {
-    background-image: url(/apple_one/apple_one_medium@2x.jpg);
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-image {
-    width: 299px;
-    height: 182px;
-    background-size: 299px 182px;
-    background-repeat: no-repeat;
-    background-image: url(/apple_one/apple_one_small.jpg);
-  }
-}
-
-@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
-  only screen and (max-width: 734px) and (min-resolution: 144dpi) {
-  .section-apple-one .tile-image {
-    background-image: url(/apple_one/apple_one_small@2x.jpg);
-  }
-}
-
 @media only screen and (min-width: 1441px) {
-  .section-apple-one .tile-image {
-    margin-left: 7.5%;
+  .section-apple-one {
+    .tile-image {
+      margin-left: 7.5%;
+    }
+    .tile-copy-container {
+      align-items: center;
+      padding-left: 0%;
+      padding-right: 4%;
+    }
+    .tile-copy-wrapper {
+      margin-left: -12%;
+    }
+    .tile-headline {
+      max-width: 700px;
+      width: auto;
+    }
   }
 }
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-image {
-    margin-top: 96px;
-    margin-bottom: 98px;
-    margin-left: 3%;
-    min-width: auto;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-image {
-    margin-top: 42px;
-    margin-bottom: 77px;
-    margin-left: 30px;
-  }
-}
-
-.section-apple-one .tile-copy-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-right: 0%;
-  box-sizing: border-box;
-}
-
 @media only screen and (min-width: 1069px) and (max-width: 1309px) {
-  .section-apple-one .tile-copy-container span.lg-wrap {
-    display: block;
-  }
-
-  .section-apple-one .tile-copy-container br.large {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1441px) {
-  .section-apple-one .tile-copy-container {
-    align-items: center;
-    padding-left: 0%;
-    padding-right: 4%;
+  .section-apple-one {
+    .tile-copy-container {
+      span.lg-wrap {
+        display: block;
+      }
+      br.large {
+        display: none;
+      }
+    }
   }
 }
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-copy-container {
-    align-items: center;
-    padding-left: 0%;
-    padding-right: 3%;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-copy-container {
-    margin-left: 0;
-    padding-right: 0;
-  }
-}
-
-.section-apple-one .tile-copy-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-}
-
-@media only screen and (min-width: 1441px) {
-  .section-apple-one .tile-copy-wrapper {
-    margin-left: -12%;
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-copy-wrapper {
-    margin-left: -14%;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-copy-wrapper {
-    width: auto;
-    margin-left: 0;
-    margin-top: 45px;
-  }
-}
-
-.section-apple-one .tile-logo {
-  width: 102px;
-  height: 33px;
-  background-size: 102px 33px;
-  background-repeat: no-repeat;
-  background-image: url(/apple_one/logo_large.png);
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5),
-  (min-resolution: 144dpi),
-  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-resolution: 1.5dppx) {
-  .section-apple-one .tile-logo {
-    background-image: url(/apple_one/logo_large_2x.png);
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-logo {
-    width: 62px;
-    height: 21px;
-    background-size: 62px 21px;
-    background-repeat: no-repeat;
-    background-image: url(/apple_one/logo_medium.png);
-  }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
-  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-  .section-apple-one .tile-logo {
-    background-image: url(/apple_one/logo_medium_2x.png);
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-logo {
-    width: 62px;
-    height: 21px;
-    background-size: 62px 21px;
-    background-repeat: no-repeat;
-    background-image: url(/apple_one/logo_small.png);
-  }
-}
-
-@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
-  only screen and (max-width: 734px) and (min-resolution: 144dpi) {
-  .section-apple-one .tile-logo {
-    background-image: url(/apple_one/logo_small_2x.png);
-  }
-}
-
-.section-apple-one .tile-headline {
-  text-align: center;
-  margin-top: 27px;
-  margin-bottom: 13px;
-}
-
-@media only screen and (min-width: 1441px) {
-  .section-apple-one .tile-headline {
-    max-width: 700px;
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-headline {
-    max-width: 552px;
-    margin-top: 13px;
-    width: 90%;
-  }
-}
-
 @media only screen and (min-width: 735px) and (max-width: 1068px) {
-  .section-apple-one .tile-headline {
-    min-width: 345px;
+  .section-apple-one {
+    .tile-headline {
+      min-width: 345px;
+    }
   }
 }
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .tile-headline {
-    max-width: 330px;
-    width: 100%;
-    margin-bottom: 12px;
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-headline a {
-    font-size: 17px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    font-family:
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(ar) {
-    letter-spacing: 0em;
-    font-family:
-      SF Pro AR,
-      SF Pro Gulf,
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(ja) {
-    letter-spacing: 0em;
-    font-family:
-      SF Pro JP,
-      SF Pro Text,
-      SF Pro Icons,
-      Hiragino Kaku Gothic Pro,
-      ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
-      ãƒ¡ã‚¤ãƒªã‚ª,
-      Meiryo,
-      ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(ko) {
-    line-height: 1.5882352941;
-    letter-spacing: 0em;
-    font-family:
-      SF Pro KR,
-      SF Pro Text,
-      SF Pro Icons,
-      Apple Gothic,
-      HY Gulim,
-      MalgunGothic,
-      HY Dotum,
-      Lexi Gulim,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(zh) {
-    letter-spacing: 0em;
-  }
-
-  .section-apple-one .tile-headline a:lang(th) {
-    line-height: 1.3529611765;
-    letter-spacing: 0em;
-    font-family:
-      SF Pro TH,
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(zh-CN) {
-    font-family:
-      SF Pro SC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang SC,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(zh-HK) {
-    font-family:
-      SF Pro HK,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang HK,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(zh-MO) {
-    font-family:
-      SF Pro HK,
-      SF Pro TC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang HK,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .tile-headline a:lang(zh-TW) {
-    font-family:
-      SF Pro TC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang TC,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .tile-headline sup a {
-    font-weight: inherit;
-  }
-}
-
-.section-apple-one .button-custom-dark {
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-  min-width: 28px;
-  border-radius: 980px;
-  background: #0071e3;
-  font-size: 17px;
-  line-height: 1.1764805882;
-  letter-spacing: -0.022em;
-  min-width: 26px;
-  padding: 12px 22px;
-  font-size: 14px;
-  line-height: 1.4285914286;
-  font-weight: 400;
-  letter-spacing: -0.016em;
-  font-family:
-    SF Pro Text,
-    SF Pro Icons,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-weight: 700;
-  background-color: #fff;
-  color: #1d1d1f;
-  cursor: pointer;
-  color: #fff;
-  background-color: #1d1d1f;
-}
-
-.section-apple-one .button-custom-dark:focus {
-  box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
-  outline: none;
-}
-
-.section-apple-one
-  .button-custom-dark:focus[data-focus-method='mouse']:not(input):not(
-    textarea
-  ):not(select),
-.section-apple-one
-  .button-custom-dark:focus[data-focus-method='touch']:not(input):not(
-    textarea
-  ):not(select) {
-  box-shadow: none;
-}
-
-.section-apple-one .button-custom-dark:active {
-  outline: none;
-}
-
-.section-apple-one .button-custom-dark.disabled,
-.section-apple-one .button-custom-dark:disabled {
-  cursor: default;
-}
-
-.section-apple-one .button-custom-dark:hover {
-  background: #0077ed;
-}
-
-.section-apple-one .button-custom-dark:active {
-  background: #006edb;
-}
-
-.section-apple-one .button-custom-dark.disabled,
-.section-apple-one .button-custom-dark:disabled {
-  background: #0071e3;
-  color: #fff;
-  opacity: 0.32;
-}
-
-.section-apple-one .button-custom-dark:lang(ar) {
-  letter-spacing: 0em;
-  font-family:
-    SF Pro AR,
-    SF Pro Gulf,
-    SF Pro Text,
-    SF Pro Icons,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(ja) {
-  letter-spacing: 0em;
-  font-family:
-    SF Pro JP,
-    SF Pro Text,
-    SF Pro Icons,
-    Hiragino Kaku Gothic Pro,
-    ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
-    ãƒ¡ã‚¤ãƒªã‚ª,
-    Meiryo,
-    ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(ko) {
-  line-height: 1.5714285714;
-  letter-spacing: 0em;
-  font-family:
-    SF Pro KR,
-    SF Pro Text,
-    SF Pro Icons,
-    Apple Gothic,
-    HY Gulim,
-    MalgunGothic,
-    HY Dotum,
-    Lexi Gulim,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(zh) {
-  letter-spacing: 0em;
-}
-
-.section-apple-one .button-custom-dark:lang(th) {
-  line-height: 1.3571828571;
-  letter-spacing: 0em;
-  font-family:
-    SF Pro TH,
-    SF Pro Text,
-    SF Pro Icons,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(zh-CN) {
-  font-family:
-    SF Pro SC,
-    SF Pro Text,
-    SF Pro Icons,
-    PingFang SC,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(zh-HK) {
-  font-family:
-    SF Pro HK,
-    SF Pro Text,
-    SF Pro Icons,
-    PingFang HK,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(zh-MO) {
-  font-family:
-    SF Pro HK,
-    SF Pro TC,
-    SF Pro Text,
-    SF Pro Icons,
-    PingFang HK,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-.section-apple-one .button-custom-dark:lang(zh-TW) {
-  font-family:
-    SF Pro TC,
-    SF Pro Text,
-    SF Pro Icons,
-    PingFang TC,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    sans-serif;
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .button-custom-dark {
-    border: 1px solid #fff;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .button-custom-dark.small-solid {
-    background-color: #fff;
-    border: none;
-    color: #1d1d1f;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .button-custom-dark.small-solid:hover {
-    background-color: #fff;
-    border: none;
-    color: #1d1d1f;
-    opacity: 0.9;
-  }
-}
-
-.section-apple-one .button-custom-dark:hover {
-  background-color: #fff;
-  color: #1d1d1f;
-  opacity: 0.9;
-  text-decoration: none;
-}
-
-.section-apple-one .button-custom-dark:hover .icon-copy {
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .button-custom-dark:hover {
-    text-decoration: none;
-    background-color: #fff;
-    color: #1d1d1f;
-    opacity: 0.9;
-  }
-}
-
-.section-apple-one .button-custom-dark-inactive {
-  cursor: auto;
-  border: 1px solid #fff;
-  color: #fff;
-  background-color: initial;
-  -webkit-backdrop-filter: none;
-}
-
-.section-apple-one .button-custom-dark-inactive:hover {
-  color: #fff;
-  background-color: initial;
-  text-decoration: none;
-}
-
-.section-apple-one .button-custom-dark:hover {
-  color: #fff;
-  background-color: #1d1d1f;
-}
-
 @media only screen and (min-width: 1069px) {
-  .section-apple-one .button-custom-dark {
-    margin-top: 20px;
-    margin-bottom: 29px;
-  }
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .button-custom-dark {
-    margin-top: 9px;
-    margin-bottom: 16px;
-  }
-}
-
-@media only screen and (max-width: 734px) {
-  .section-apple-one .button-custom-dark {
-    margin-top: 16px;
-    margin-bottom: 20px;
-  }
-}
-
-.section-apple-one .typography-router-headline .footnote-number {
-  font-size: 0.45em;
-}
-
-sup.section-apple-one .typography-router-headline .footnote-number {
-  top: -0.86em;
-}
-
-sub.section-apple-one .typography-router-headline .footnote-number {
-  bottom: -0.36em;
-}
-
-.section-apple-one .typography-router-headline sup {
-  top: -0.5em;
-}
-
-@media only screen and (max-width: 1068px) {
-  .section-apple-one .typography-router-cta {
-    font-size: 17px;
-    line-height: 1.4705882353;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-    font-family:
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(ar) {
-    letter-spacing: 0em;
-    font-family:
-      SF Pro AR,
-      SF Pro Gulf,
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(ja) {
-    letter-spacing: 0em;
-    font-family:
-      SF Pro JP,
-      SF Pro Text,
-      SF Pro Icons,
-      Hiragino Kaku Gothic Pro,
-      ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
-      ãƒ¡ã‚¤ãƒªã‚ª,
-      Meiryo,
-      ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(ko) {
-    line-height: 1.5882352941;
-    letter-spacing: 0em;
-    font-family:
-      SF Pro KR,
-      SF Pro Text,
-      SF Pro Icons,
-      Apple Gothic,
-      HY Gulim,
-      MalgunGothic,
-      HY Dotum,
-      Lexi Gulim,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(zh) {
-    letter-spacing: 0em;
-  }
-
-  .section-apple-one .typography-router-cta:lang(th) {
-    line-height: 1.3529611765;
-    letter-spacing: 0em;
-    font-family:
-      SF Pro TH,
-      SF Pro Text,
-      SF Pro Icons,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(zh-CN) {
-    font-family:
-      SF Pro SC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang SC,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(zh-HK) {
-    font-family:
-      SF Pro HK,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang HK,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(zh-MO) {
-    font-family:
-      SF Pro HK,
-      SF Pro TC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang HK,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-  }
-
-  .section-apple-one .typography-router-cta:lang(zh-TW) {
-    font-family:
-      SF Pro TC,
-      SF Pro Text,
-      SF Pro Icons,
-      PingFang TC,
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
+  .section-apple-one {
+    .button-custom-dark {
+      margin-top: 20px;
+      margin-bottom: 29px;
+    }
   }
 }

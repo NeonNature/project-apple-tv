@@ -1,4 +1,5 @@
 import '../styles/appleone.scss'
+import '../styles/styles.scss'
 
 export default function AppleOne() {
   return (

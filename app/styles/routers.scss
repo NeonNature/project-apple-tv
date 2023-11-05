@@ -1,0 +1,1021 @@
+.image-student-plan {
+  width: 533px;
+  height: 450px;
+  background-size: 533px 450px;
+  background-repeat: no-repeat;
+  background-image: url(/routers/student_plan.jpeg);
+}
+
+@media only screen and (max-width: 1068px) {
+  .image-student-plan {
+    width: 319px;
+    height: 269px;
+    background-size: 319px 269px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .image-student-plan {
+    width: 299px;
+    height: 258px;
+    background-size: 299px 258px;
+    background-repeat: no-repeat;
+  }
+}
+
+.section-routers {
+  position: relative;
+  overflow: hidden;
+  padding-top: 39px;
+  .section-content {
+    width: 97%;
+    padding: 0;
+  }
+  .student-plan-router {
+    left: 0;
+    height: 530px;
+    margin: 0 auto;
+    max-width: 1360px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f7;
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100%;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      padding-top: 108px;
+    }
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .image-student-plan {
+        background-size: contain;
+        height: 100%;
+      }
+    }
+    .copy-container {
+      height: 100%;
+      max-width: 535px;
+      margin-right: 20px;
+      .footnote {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .typography-router-headline {
+        margin-top: 18px;
+        margin-bottom: 13px;
+      }
+      .typography-router-cta {
+        margin-top: 20px;
+      }
+    }
+    .button-custom-dark {
+      margin-top: 13px;
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      min-width: 28px;
+      border-radius: 980px;
+      background: #0071e3;
+      font-size: 17px;
+      line-height: 1.1764805882;
+      letter-spacing: -0.022em;
+      min-width: 26px;
+      padding: 12px 22px;
+      font-size: 14px;
+      line-height: 1.4285914286;
+      font-weight: 400;
+      letter-spacing: -0.016em;
+      font-family:
+        SF Pro Text,
+        SF Pro Icons,
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-weight: 700;
+      background-color: #fff;
+      color: #1d1d1f;
+      cursor: pointer;
+      color: #fff;
+      background-color: #1d1d1f;
+      &:focus {
+        box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+        outline: none;
+      }
+      &:active {
+        outline: none;
+        background: #006edb;
+      }
+      &:disabled {
+        cursor: default;
+        background: #0071e3;
+        color: #fff;
+        opacity: 0.32;
+      }
+      &:hover {
+        background: #0077ed;
+        background-color: #fff;
+        color: #1d1d1f;
+        opacity: 0.9;
+        text-decoration: none;
+        color: #fff;
+        background-color: #1d1d1f;
+        .icon-copy {
+          text-decoration: none;
+        }
+      }
+      &:lang(ar) {
+        letter-spacing: 0em;
+        font-family:
+          SF Pro AR,
+          SF Pro Gulf,
+          SF Pro Text,
+          SF Pro Icons,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(ja) {
+        letter-spacing: 0em;
+        font-family:
+          SF Pro JP,
+          SF Pro Text,
+          SF Pro Icons,
+          Hiragino Kaku Gothic Pro,
+          ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
+          ãƒ¡ã‚¤ãƒªã‚ª,
+          Meiryo,
+          ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(ko) {
+        line-height: 1.5714285714;
+        letter-spacing: 0em;
+        font-family:
+          SF Pro KR,
+          SF Pro Text,
+          SF Pro Icons,
+          Apple Gothic,
+          HY Gulim,
+          MalgunGothic,
+          HY Dotum,
+          Lexi Gulim,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(zh) {
+        letter-spacing: 0em;
+      }
+      &:lang(th) {
+        line-height: 1.3571828571;
+        letter-spacing: 0em;
+        font-family:
+          SF Pro TH,
+          SF Pro Text,
+          SF Pro Icons,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(zh-CN) {
+        font-family:
+          SF Pro SC,
+          SF Pro Text,
+          SF Pro Icons,
+          PingFang SC,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(zh-HK) {
+        font-family:
+          SF Pro HK,
+          SF Pro Text,
+          SF Pro Icons,
+          PingFang HK,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(zh-MO) {
+        font-family:
+          SF Pro HK,
+          SF Pro TC,
+          SF Pro Text,
+          SF Pro Icons,
+          PingFang HK,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+      &:lang(zh-TW) {
+        font-family:
+          SF Pro TC,
+          SF Pro Text,
+          SF Pro Icons,
+          PingFang TC,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+    }
+    .button-custom-dark.disabled {
+      cursor: default;
+      background: #0071e3;
+      color: #fff;
+      opacity: 0.32;
+    }
+    .button-custom-dark-inactive {
+      cursor: auto;
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: initial;
+      -webkit-backdrop-filter: none;
+      &:hover {
+        color: #fff;
+        background-color: initial;
+        text-decoration: none;
+      }
+    }
+  }
+  .lower-container {
+    position: relative;
+    max-width: 1360px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    .typography-router-headline {
+      margin-top: 21px;
+      margin-bottom: 17px;
+      .footnote-number {
+        font-size: 0.45em;
+      }
+      sup {
+        top: -0.5em;
+      }
+    }
+    .copy-container {
+      position: relative;
+      width: 100%;
+      top: 12.2%;
+      text-align: center;
+      .learn-more {
+        color: #06c;
+      }
+      .button {
+        color: #fff;
+        &:hover {
+          .icon-copy {
+            text-decoration: none;
+          }
+        }
+      }
+      .violator-frameless {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -34px;
+      }
+    }
+    .availability-caption {
+      color: #6e6e73;
+    }
+  }
+  .airplay-router {
+    position: relative;
+    transform: translate(0px);
+    overflow: hidden;
+    min-height: 880px;
+    display: flex;
+    flex-direction: column;
+    width: 48.5%;
+    height: 100%;
+    background-color: #f5f5f7;
+    .copy-container {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      min-height: 256px;
+      padding-bottom: 82px;
+      top: 108px;
+      h3 {
+        margin-top: 3px;
+      }
+    }
+    .typography-router-headline {
+      margin-top: 15px;
+      margin-bottom: 36px;
+    }
+  }
+  .tv-4k-router {
+    position: relative;
+    transform: translate(0px);
+    overflow: hidden;
+    min-height: 880px;
+    display: flex;
+    flex-direction: column;
+    width: 48.5%;
+    height: 100%;
+    background-color: #f5f5f7;
+    .copy-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 100px;
+      top: 106px;
+    }
+    .ctas {
+      margin-top: 26px;
+    }
+  }
+  .image-apple-tv-4k {
+    width: 663px;
+    height: 494px;
+    background-size: 663px 494px;
+    background-repeat: no-repeat;
+    background-image: url(/routers/remote.jpeg);
+    position: relative;
+    left: 50%;
+    margin-left: -331.5px;
+    background-position: bottom;
+    bottom: 0;
+    z-index: -1;
+    order: 1;
+    min-height: 567px;
+  }
+  .tv-4k-icon {
+    width: 116px;
+    height: 35px;
+    background-size: 116px 35px;
+    background-repeat: no-repeat;
+    background-image: url(/routers/4k.png);
+    position: relative;
+    left: 50%;
+    margin-left: -58px;
+    margin-bottom: 15px;
+  }
+  .image-router-airplay {
+    width: 663px;
+    height: 499px;
+    background-size: 663px 499px;
+    background-repeat: no-repeat;
+    background-image: url(/routers/airplay.jpeg);
+    position: relative;
+    left: 50%;
+    margin-left: -331.5px;
+    background-position-x: center;
+    background-position-y: bottom;
+    z-index: -1;
+    order: 1;
+    min-height: 541px;
+  }
+}
+html.text-zoom {
+  .section-routers {
+    .student-plan-router {
+      height: 1000px;
+      .image-wrapper {
+        .image-student-plan {
+          height: 50%;
+        }
+      }
+    }
+    .lower-container {
+      .typography-router-headline {
+        font-size: 28px;
+      }
+    }
+    .image-apple-tv-4k {
+      min-height: auto;
+    }
+    .image-router-airplay {
+      min-height: auto;
+      padding-bottom: 190px;
+    }
+    .copy-container {
+      .violator-frameless {
+        position: relative;
+      }
+    }
+  }
+}
+sup.section-routers {
+  .lower-container {
+    .typography-router-headline {
+      .footnote-number {
+        top: -0.86em;
+      }
+    }
+  }
+}
+sub.section-routers {
+  .lower-container {
+    .typography-router-headline {
+      .footnote-number {
+        bottom: -0.36em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1068px) {
+  .section-routers {
+    padding-top: 24px;
+    .section-content {
+      .learn-more {
+        font-size: 17px;
+        line-height: 1.4705882353;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        font-family:
+          SF Pro Text,
+          SF Pro Icons,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        &:lang(ar) {
+          letter-spacing: 0em;
+          font-family:
+            SF Pro AR,
+            SF Pro Gulf,
+            SF Pro Text,
+            SF Pro Icons,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(ja) {
+          letter-spacing: 0em;
+          font-family:
+            SF Pro JP,
+            SF Pro Text,
+            SF Pro Icons,
+            Hiragino Kaku Gothic Pro,
+            ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
+            ãƒ¡ã‚¤ãƒªã‚ª,
+            Meiryo,
+            ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(ko) {
+          line-height: 1.5882352941;
+          letter-spacing: 0em;
+          font-family:
+            SF Pro KR,
+            SF Pro Text,
+            SF Pro Icons,
+            Apple Gothic,
+            HY Gulim,
+            MalgunGothic,
+            HY Dotum,
+            Lexi Gulim,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh) {
+          letter-spacing: 0em;
+        }
+        &:lang(th) {
+          line-height: 1.3529611765;
+          letter-spacing: 0em;
+          font-family:
+            SF Pro TH,
+            SF Pro Text,
+            SF Pro Icons,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-CN) {
+          font-family:
+            SF Pro SC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang SC,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-HK) {
+          font-family:
+            SF Pro HK,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang HK,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-MO) {
+          font-family:
+            SF Pro HK,
+            SF Pro TC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang HK,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-TW) {
+          font-family:
+            SF Pro TC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang TC,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+      }
+      sup {
+        a {
+          font-weight: inherit;
+        }
+      }
+    }
+    .student-plan-router {
+      height: 345px;
+      max-width: 733px;
+      .row {
+        padding-top: 0px;
+      }
+      .image-wrapper {
+        .image-student-plan {
+          height: 450px;
+        }
+      }
+      .copy-container {
+        margin-top: 69px;
+        .typography-router-headline {
+          margin-top: 13px;
+        }
+        .typography-router-cta {
+          margin-top: 8px;
+        }
+      }
+    }
+    .lower-container {
+      margin: 24px auto;
+      max-width: 733px;
+      .typography-router-headline {
+        margin-top: 10px;
+        margin-bottom: 6px;
+      }
+      .copy-container {
+        top: 49px;
+        .violator-frameless {
+          font-size: 12px;
+          top: -19px;
+        }
+      }
+      .availability-caption {
+        margin-top: 0;
+      }
+    }
+    .airplay-router {
+      min-height: 471px;
+      .copy-container {
+        min-height: 168px;
+        padding-bottom: 29px;
+        top: 51px;
+        h3 {
+          margin-top: 0;
+        }
+      }
+      .typography-router-headline {
+        margin-top: 9px;
+        margin-bottom: 17px;
+      }
+    }
+    .tv-4k-router {
+      min-height: 471px;
+      .button {
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 17px;
+        line-height: 1.1764805882;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        font-family:
+          SF Pro Text,
+          SF Pro Icons,
+          Helvetica Neue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        min-width: 28px;
+        padding: 8px 16px;
+        border-radius: 980px;
+        background: #0071e3;
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+          background: #0077ed;
+        }
+        &:focus {
+          box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+          outline: none;
+        }
+        &:active {
+          outline: none;
+          background: #006edb;
+        }
+        &:disabled {
+          cursor: default;
+          background: #0071e3;
+          color: #fff;
+          opacity: 0.32;
+        }
+        &:lang(ar) {
+          letter-spacing: 0em;
+          font-family:
+            SF Pro AR,
+            SF Pro Gulf,
+            SF Pro Text,
+            SF Pro Icons,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(ja) {
+          letter-spacing: 0em;
+          font-family:
+            SF Pro JP,
+            SF Pro Text,
+            SF Pro Icons,
+            Hiragino Kaku Gothic Pro,
+            ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,
+            ãƒ¡ã‚¤ãƒªã‚ª,
+            Meiryo,
+            ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(ko) {
+          letter-spacing: 0em;
+          font-family:
+            SF Pro KR,
+            SF Pro Text,
+            SF Pro Icons,
+            Apple Gothic,
+            HY Gulim,
+            MalgunGothic,
+            HY Dotum,
+            Lexi Gulim,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh) {
+          letter-spacing: 0em;
+        }
+        &:lang(th) {
+          font-family:
+            SF Pro TH,
+            SF Pro Text,
+            SF Pro Icons,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-CN) {
+          font-family:
+            SF Pro SC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang SC,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-HK) {
+          font-family:
+            SF Pro HK,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang HK,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-MO) {
+          font-family:
+            SF Pro HK,
+            SF Pro TC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang HK,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+        &:lang(zh-TW) {
+          font-family:
+            SF Pro TC,
+            SF Pro Text,
+            SF Pro Icons,
+            PingFang TC,
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        }
+      }
+      .button.disabled {
+        cursor: default;
+        background: #0071e3;
+        color: #fff;
+        opacity: 0.32;
+      }
+      .copy-container {
+        padding-bottom: 34px;
+        top: 49px;
+      }
+      .ctas {
+        margin-top: 11px;
+      }
+    }
+    .image-apple-tv-4k {
+      width: 356px;
+      height: 246px;
+      background-size: 356px 246px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -178px;
+      min-height: 300px;
+    }
+    .tv-4k-icon {
+      width: 71px;
+      height: 22px;
+      background-size: 71px 22px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -35.5px;
+      margin-top: -1px;
+      margin-bottom: 13px;
+    }
+    .image-router-airplay {
+      width: 356px;
+      height: 268px;
+      background-size: 356px 268px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -178px;
+      min-height: 274px;
+    }
+  }
+  html.text-zoom {
+    .section-routers {
+      .student-plan-router {
+        height: 600px;
+      }
+      .image-apple-tv-4k {
+        min-height: 300px;
+      }
+      .image-router-airplay {
+        min-height: 300px;
+        padding-bottom: 71px;
+      }
+      .links-inline {
+        li {
+          display: block;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 734px) {
+  .section-routers {
+    padding-top: 0px;
+    .section-content {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .student-plan-router {
+      display: flex;
+      height: auto;
+      justify-content: center;
+      max-width: 100%;
+      .row {
+        justify-content: center;
+        flex-direction: column;
+      }
+      .image-wrapper {
+        .image-student-plan {
+          margin-top: 38px;
+        }
+      }
+      .copy-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        text-align: center;
+        top: 0;
+        .typography-router-headline {
+          margin-top: 12px;
+        }
+        .typography-router-cta {
+          margin-top: 12px;
+        }
+      }
+      .button-custom-dark {
+        border: 1px solid #fff;
+        &:hover {
+          text-decoration: none;
+          background-color: #fff;
+          color: #1d1d1f;
+          opacity: 0.9;
+        }
+      }
+      .button-custom-dark.small-solid {
+        background-color: #fff;
+        border: none;
+        color: #1d1d1f;
+        &:hover {
+          background-color: #fff;
+          border: none;
+          color: #1d1d1f;
+          opacity: 0.9;
+        }
+      }
+    }
+    .lower-container {
+      flex-direction: column;
+      margin: 15px auto;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      .typography-router-headline {
+        margin-top: 12px;
+        margin-bottom: 7px;
+      }
+      .copy-container {
+        top: 49px;
+      }
+    }
+    .tv-4k-router {
+      width: 100%;
+      .copy-container {
+        padding-bottom: 56px;
+        top: 49px;
+      }
+    }
+    .image-apple-tv-4k {
+      width: 325px;
+      height: 259px;
+      background-size: 325px 259px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -162.5px;
+      z-index: 0;
+      min-height: 276px;
+    }
+    .tv-4k-icon {
+      width: 68px;
+      height: 21px;
+      background-size: 68px 21px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -34px;
+      margin-bottom: 0;
+    }
+    .airplay-router {
+      .copy-container {
+        top: 51px;
+      }
+      .typography-router-headline {
+        margin-top: 12px;
+      }
+      width: 100%;
+      height: 491px;
+      margin-top: 15px;
+      left: 0;
+      .gradient {
+        margin-top: 183px;
+        height: 315px;
+      }
+    }
+    .image-router-airplay {
+      width: 448px;
+      height: 263px;
+      background-size: 448px 263px;
+      background-repeat: no-repeat;
+      left: 50%;
+      margin-left: -224px;
+      position: relative;
+      left: 50%;
+      margin-left: -331.5px;
+      z-index: 0;
+    }
+  }
+  html.text-zoom {
+    .section-routers {
+      .airplay-router {
+        height: 100%;
+        min-height: 641px;
+      }
+      .tv-4k-router {
+        height: 100%;
+        min-height: 787px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1068px) and (max-width: 1068px) {
+  .section-routers {
+    .student-plan-router {
+      .image-wrapper {
+        .image-student-plan {
+          height: 269px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1068px) and (max-width: 734px) {
+  .section-routers {
+    .student-plan-router {
+      .image-wrapper {
+        .image-student-plan {
+          height: 258px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .section-routers {
+    .image-apple-tv-4k {
+      min-height: 551px;
+    }
+  }
+}
+@media only screen and (max-width: 734px) and (max-width: 1068px) {
+  .section-routers {
+    .image-router-airplay {
+      left: 50%;
+      margin-left: -178px;
+    }
+  }
+}
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+  .section-routers {
+    .image-router-airplay {
+      left: 50%;
+      margin-left: -225px;
+    }
+  }
+}
+@media only screen and (max-width: 734px) and (max-width: 320px) {
+  html.text-zoom {
+    .section-routers {
+      .tv-4k-router {
+        min-height: 920px;
+      }
+      .airplay-router {
+        min-height: 800px;
+      }
+    }
+  }
+}

@@ -1,13 +1,10 @@
-import '../styles/appleone.scss'
+import '../styles/routers.scss'
 
 export default function Routers() {
   return (
     <section className="section section-routers theme-light">
       <div className="section-content">
-        <div
-          className="student-plan-router"
-          data-analytics-section-engagement="name:student plan"
-        >
+        <div className="student-plan-router">
           <div className="row">
             <div className="copy-container column large-5 large-offset-1 medium-4 small-12 small-offset-0 small-centered">
               <h3 className="student-plan-icon">
@@ -27,9 +24,6 @@ export default function Routers() {
                 href="https://music.apple.com/deeplink?app=music&amp;p=subscribe-student?itscg=10000&amp;itsct=mus-0-tv_ovp-try_mus-apl-200310"
                 className="button button-elevated button-custom-dark"
                 aria-label="Try apple music free"
-                data-analytics-title="try apple music free"
-                data-analytics-exit-link=""
-                data-rid-relay='{"286":"itsct"}'
               >
                 Try Apple Music free
               </a>
@@ -40,10 +34,7 @@ export default function Routers() {
           </div>
         </div>
         <div className="lower-container">
-          <div
-            className="tv-4k-router"
-            data-analytics-section-engagement="name:apple tv 4k"
-          >
+          <div className="tv-4k-router">
             <figure className="image-apple-tv-4k"></figure>
             <div className="copy-container">
               <h3 className="tv-4k-icon">
@@ -58,8 +49,7 @@ export default function Routers() {
                 <ul className="links-inline">
                   <li>
                     <a
-                      href="/us/shop/goto/buy_tv/apple_tv_4k"
-                      data-analytics-title="buy - apple tv 4k"
+                      href="https://www.apple.com/us/shop/goto/buy_tv/apple_tv_4k"
                       aria-label="Buy Apple TV 4K"
                       className="icon-wrapper button button-elevated"
                     >
@@ -68,11 +58,9 @@ export default function Routers() {
                   </li>
                   <li>
                     <a
-                      href="/apple-tv-4k/"
-                      data-analytics-title="learn more about apple tv 4k"
+                      href="https://www.apple.com/apple-tv-4k/"
                       aria-label="Learn more about Apple TV 4K"
                       className="icon-wrapper learn-more"
-                      data-rid-store='{"289":"atv-0-tvapp_ovp-tle_lrn-apl-avl-191111"}'
                     >
                       <span className="icon-copy">Learn more</span>
                       <span className="icon icon-after more"></span>
@@ -93,7 +81,7 @@ export default function Routers() {
                 Bring Apple&nbsp;TV+ to <br />a screen near you.
               </p>
               <a
-                href="/airplay/"
+                href="https://www.apple.com/airplay/"
                 data-analytics-title="learn more about airplay"
                 aria-label="learn more about airplay"
                 className="icon-wrapper typography-router-cta learn-more"
