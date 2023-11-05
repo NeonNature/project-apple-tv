@@ -1,0 +1,468 @@
+.section-apple-tv-app {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px;
+}
+
+.image-apple-tv-app-icon {
+  width: 76px;
+  height: 76px;
+  background-size: 76px 76px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/appletv.png);
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app {
+    padding-bottom: 30px;
+  }
+}
+
+.section-apple-tv-app .section-content {
+  position: relative;
+}
+
+.section-apple-tv-app .lockup {
+  padding-top: 130px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 52px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .lockup {
+    padding-top: 103px;
+    width: 550px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .lockup {
+    width: 100%;
+    padding-bottom: 27px;
+  }
+}
+
+.section-apple-tv-app .lockup .typography-body {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .lockup .typography-body {
+    margin-top: 14px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .lockup .typography-body {
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+}
+
+.section-apple-tv-app .image-apple-tv-app-icon {
+  margin: 0 auto 17px;
+}
+
+.section-apple-tv-app .typography-headline-elevated {
+  font-weight: 700;
+}
+
+.section-apple-tv-app .logo {
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .logo {
+    display: flex;
+    justify-content: center;
+    flex-basis: 33%;
+    margin-bottom: 30px;
+  }
+}
+
+html.no-js .section-apple-tv-app .logo,
+html.prefers-reduced-motion .section-apple-tv-app .logo {
+  opacity: 1;
+}
+
+.section-apple-tv-app .logo .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-apple-tv-app .internal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 20px 67px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .internal {
+    margin: 0px 7px 47px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .internal {
+    justify-content: flex-start;
+    margin: 0px 0px 41px;
+  }
+}
+
+.section-apple-tv-app .internal .feature-headline {
+  text-align: center;
+  margin-top: 17px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .internal .feature-headline {
+    margin-top: 11px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .internal .feature-headline {
+    margin-top: 8px;
+  }
+}
+
+.section-apple-tv-app .copy-lockup {
+  text-align: center;
+}
+
+.section-apple-tv-app .copy-lockup .subhead {
+  font-weight: 600;
+}
+
+.section-apple-tv-app .external {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external {
+    justify-content: center;
+    margin-bottom: 58px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 34px auto 29px;
+    max-width: 340px;
+  }
+}
+
+.section-apple-tv-app .external .logo {
+  margin-bottom: 26px;
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external .logo {
+    margin-bottom: 29px;
+    padding: 0 23px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external .logo {
+    margin-bottom: 35px;
+    padding: 0 10px;
+    flex-basis: unset;
+  }
+}
+
+.section-apple-tv-app .external .icon-samsung {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external .icon-samsung {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external .icon-samsung {
+    margin-left: 0px;
+  }
+}
+
+.section-apple-tv-app .external .icon-xfinity {
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external .icon-xfinity {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external .icon-xfinity {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external .icon-roku {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external .icon-roku {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .section-apple-tv-app .external .icon-xbox {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .section-apple-tv-app .external .icon-xbox {
+    padding-right: 10px;
+  }
+}
+
+.section-apple-tv-app .logo:first-child {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.1s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .logo:nth-child(2) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.2s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .logo:nth-child(3) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.3s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .logo:nth-child(4) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.4s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .logo:nth-child(5) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.5s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:first-child {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.6s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(2) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.7s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(3) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.8s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(4) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 0.9s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(5) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(6) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1.1s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(7) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1.2s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(8) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1.3s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(9) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1.4s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col:nth-child(10) {
+  transition: opacity 0.3s ease-in;
+  transition-delay: 1.5s;
+  will-change: opacity;
+}
+
+.section-apple-tv-app .col {
+  opacity: 0;
+}
+
+.section-apple-tv-app .build-in .col,
+.section-apple-tv-app .build-in .logo,
+html.no-js .section-apple-tv-app .col,
+html.prefers-reduced-motion .section-apple-tv-app .col {
+  opacity: 1;
+}
+
+.image-icon-airplay {
+  width: 54px;
+  height: 81px;
+  background-size: 54px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/airplay.jpeg);
+}
+
+.image-icon-apple-tv {
+  width: 66px;
+  height: 82px;
+  background-size: 66px 82px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/icon_appletv.jpeg);
+}
+
+.image-icon-firetv {
+  width: 96px;
+  height: 81px;
+  background-size: 96px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/firetv.jpeg);
+}
+
+.image-icon-google-tv {
+  width: 160px;
+  height: 81px;
+  background-size: 160px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/googletv.jpeg);
+}
+
+.image-icon-ipad {
+  width: 85px;
+  height: 81px;
+  background-size: 85px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/ipad.jpeg);
+}
+
+.image-icon-iphone {
+  width: 90px;
+  height: 81px;
+  background-size: 90px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/iphone.jpeg);
+}
+
+.image-icon-lg {
+  width: 161px;
+  height: 81px;
+  background-size: 161px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/lg.jpeg);
+}
+
+.image-icon-mac {
+  width: 114px;
+  height: 81px;
+  background-size: 114px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/mac.jpeg);
+}
+
+.image-icon-playstation {
+  width: 161px;
+  height: 81px;
+  background-size: 161px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/playstation.jpeg);
+}
+
+.image-icon-roku {
+  width: 102px;
+  height: 81px;
+  background-size: 102px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/roku.jpeg);
+}
+
+.image-icon-samsung {
+  width: 117px;
+  height: 81px;
+  background-size: 117px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/samsung.jpeg);
+}
+.image-icon-sony {
+  width: 126px;
+  height: 81px;
+  background-size: 126px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/sony.jpeg);
+}
+
+.image-icon-vizio {
+  width: 110px;
+  height: 81px;
+  background-size: 110px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/vizio.jpeg);
+}
+
+.image-icon-xbox {
+  width: 123px;
+  height: 81px;
+  background-size: 123px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/xbox.jpeg);
+}
+
+.image-icon-xfinity {
+  width: 113px;
+  height: 81px;
+  background-size: 113px 81px;
+  background-repeat: no-repeat;
+  background-image: url(/devices/xfinity.jpeg);
+}

@@ -1,0 +1,532 @@
+.accordion {
+  margin: 0;
+  list-style: none;
+}
+
+.accordion-item {
+  --accordion-border-width: 1px;
+  border-top: var(--accordion-border-width) solid;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family:
+    SF Pro Display,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  --accordion-border-color: #d2d2d7;
+  border-color: var(--accordion-border-color);
+}
+
+.accordion-item:first-child {
+  --accordion-border-width: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-item {
+    font-size: 21px;
+    line-height: 1.1904761905;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+    font-family:
+      SF Pro Display,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-item {
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    letter-spacing: 0.012em;
+    font-family:
+      SF Pro Display,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+.accordion-item .accordion-nested .accordion-icon {
+  --accordion-icon-width: 24px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 21px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 19px;
+  }
+}
+
+.accordion-title {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.accordion-title .accordion-title-text {
+  --accordion-title-max-width: 83.3333333333%;
+  max-width: var(--accordion-title-max-width);
+}
+
+.accordion-button {
+  letter-spacing: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  position: relative;
+  --accordion-button-padding-top: 1em;
+  --accordion-button-padding-bottom: 1em;
+  padding-top: var(--accordion-button-padding-top);
+  padding-bottom: var(--accordion-button-padding-bottom);
+}
+
+.accordion-button:focus {
+  outline: none;
+}
+
+.accordion-button:focus:after {
+  outline: 4px solid rgba(0, 125, 250, 0.6);
+  outline-offset: 1px;
+}
+
+.accordion-button:focus:after[data-focus-method='mouse']:not(input):not(
+    textarea
+  ):not(select),
+.accordion-button:focus:after[data-focus-method='touch']:not(input):not(
+    textarea
+  ):not(select),
+.accordion-button:focus[data-focus-method='mouse']:not(input):not(textarea):not(
+    select
+  ):after,
+.accordion-button:focus[data-focus-method='touch']:not(input):not(textarea):not(
+    select
+  ):after {
+  outline: none;
+}
+
+.accordion-button:after {
+  content: '';
+  display: block;
+  width: 100%;
+  top: 0.6em;
+  height: calc(100% - 1.2em);
+  position: absolute;
+}
+
+.accordion-icon {
+  margin: 0;
+  transition: color 100ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --accordion-icon-width: 1em;
+  --accordion-icon-height: auto;
+  --accordion-icon-stroke-width: 2.25;
+  width: var(--accordion-icon-width);
+  height: var(--accordion-icon-height);
+  stroke-width: var(--accordion-icon-stroke-width);
+  --accordion-icon-color: #86868b;
+  --accordion-icon-color-hover: #6e6e73;
+  color: var(--accordion-icon-color);
+}
+
+.accordion-icon .accordion-icon-svg {
+  overflow: visible;
+  --accordion-icon-svg-width: 1em;
+  width: var(--accordion-icon-svg-width);
+}
+
+.accordion-button:hover .accordion-icon {
+  color: var(--accordion-icon-color-hover);
+}
+
+.accordion-tray {
+  --accordion-transition-duration: 1000ms;
+  margin: 0;
+  transition: max-height ease-in-out;
+  transition-duration: var(--accordion-transition-duration);
+  max-height: 300px;
+}
+
+.accordion-item.collapsed > .accordion-tray {
+  max-height: 0;
+}
+
+.accordion-tray {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion) {
+  .accordion-tray {
+    transition: none;
+  }
+}
+
+.accordion-content {
+  --accordion-content-padding-top: 0em;
+  --accordion-content-padding-bottom: 1em;
+  padding-top: var(--accordion-content-padding-top);
+  padding-bottom: var(--accordion-content-padding-bottom);
+}
+
+.accordion-content .accordion-content-paragraph {
+  --accordion-content-paragraph-max-width: 83.3333333333%;
+  --accordion-content-paragraph-padding-top: 0em;
+  --accordion-content-paragraph-padding-bottom: 0.8em;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family:
+    SF Pro Text,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  max-width: var(--accordion-content-paragraph-max-width);
+  padding-top: var(--accordion-content-paragraph-padding-top);
+  padding-bottom: var(--accordion-content-paragraph-padding-bottom);
+}
+
+.accordion-elevated .accordion-item {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  font-family:
+    SF Pro Display,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-elevated .accordion-item {
+    font-size: 28px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    font-family:
+      SF Pro Display,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-elevated .accordion-item {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    letter-spacing: 0.009em;
+    font-family:
+      SF Pro Display,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+.accordion-elevated .accordion-item .accordion-nested .accordion-icon {
+  --accordion-icon-width: 32px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-elevated .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 28px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-elevated .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 24px;
+  }
+}
+
+.accordion-reduced .accordion-item {
+  font-size: 17px;
+  line-height: 1.2353641176;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  font-family:
+    SF Pro Text,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-reduced .accordion-item {
+    font-size: 17px;
+    line-height: 1.2353641176;
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    font-family:
+      SF Pro Text,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-reduced .accordion-item {
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 600;
+    letter-spacing: -0.016em;
+    font-family:
+      SF Pro Text,
+      SF Pro Icons,
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+}
+
+.accordion-reduced .accordion-item .accordion-nested .accordion-icon {
+  --accordion-icon-width: 17px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .accordion-reduced .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 17px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .accordion-reduced .accordion-item .accordion-nested .accordion-icon {
+    --accordion-icon-width: 14px;
+  }
+}
+
+.accordion-reduced .accordion-content {
+  --accordion-content-padding-top: 0em;
+  --accordion-content-padding-bottom: 1em;
+  padding-top: var(--accordion-content-padding-top);
+  padding-bottom: var(--accordion-content-padding-bottom);
+}
+
+.accordion-reduced .accordion-content .accordion-content-paragraph {
+  --accordion-content-paragraph-max-width: 83.3333333333%;
+  --accordion-content-paragraph-padding-top: 0em;
+  --accordion-content-paragraph-padding-bottom: 0.8em;
+  font-size: 14px;
+  line-height: 1.4285914286;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family:
+    SF Pro Text,
+    SF Pro Icons,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
+  max-width: var(--accordion-content-paragraph-max-width);
+  padding-top: var(--accordion-content-paragraph-padding-top);
+  padding-bottom: var(--accordion-content-paragraph-padding-bottom);
+}
+
+.accordion-numbered {
+  --accordion-number-side-padding: 0.4em;
+  --accordion-number-icon-display: inline-block;
+}
+
+.accordion-numbered .accordion-title-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.accordion-numbered .accordion-title-text:after,
+.accordion-numbered .accordion-title-text:before {
+  font-family: SF Pro Icons;
+  color: inherit;
+  display: inline-block;
+  font-style: normal;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: 1;
+  text-decoration: underline;
+  position: relative;
+  z-index: 1;
+  alt: '';
+  text-decoration: none;
+}
+
+.accordion-numbered .accordion-title-text:before {
+  display: none;
+}
+
+.accordion-numbered .accordion-title-text:after,
+.accordion-numbered .accordion-title-text:before {
+  content: 'ï‚';
+}
+
+.accordion-numbered .accordion-title-text:before {
+  padding-right: var(--accordion-number-side-padding);
+  display: inline-block;
+  top: 0;
+}
+
+.accordion-numbered .accordion-title-text:after {
+  display: none;
+}
+
+.accordion-numbered .accordion-title-text:before {
+  display: var(--accordion-number-icon-display);
+}
+
+.accordion-numbered .accordion-item:nth-child(2) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(2) .accordion-title-text:before {
+  content: 'ïƒ';
+}
+
+.accordion-numbered .accordion-item:nth-child(3) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(3) .accordion-title-text:before {
+  content: 'ï„';
+}
+
+.accordion-numbered .accordion-item:nth-child(4) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(4) .accordion-title-text:before {
+  content: 'ï…';
+}
+
+.accordion-numbered .accordion-item:nth-child(5) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(5) .accordion-title-text:before {
+  content: 'ï†';
+}
+
+.accordion-numbered .accordion-item:nth-child(6) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(6) .accordion-title-text:before {
+  content: 'ï‡';
+}
+
+.accordion-numbered .accordion-item:nth-child(7) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(7) .accordion-title-text:before {
+  content: 'ïˆ';
+}
+
+.accordion-numbered .accordion-item:nth-child(8) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(8) .accordion-title-text:before {
+  content: 'ï‰';
+}
+
+.accordion-numbered .accordion-item:nth-child(9) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(9) .accordion-title-text:before {
+  content: 'ïŠ';
+}
+
+.accordion-numbered .accordion-item:nth-child(10) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(10) .accordion-title-text:before {
+  content: 'ï‹';
+}
+
+.accordion-numbered .accordion-item:nth-child(11) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(11) .accordion-title-text:before {
+  content: 'ïŒ';
+}
+
+.accordion-numbered .accordion-item:nth-child(12) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(12) .accordion-title-text:before {
+  content: 'ï';
+}
+
+.accordion-numbered .accordion-item:nth-child(13) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(13) .accordion-title-text:before {
+  content: 'ïŽ';
+}
+
+.accordion-numbered .accordion-item:nth-child(14) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(14) .accordion-title-text:before {
+  content: 'ï';
+}
+
+.accordion-numbered .accordion-item:nth-child(15) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(15) .accordion-title-text:before {
+  content: 'ï';
+}
+
+.accordion-numbered .accordion-item:nth-child(16) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(16) .accordion-title-text:before {
+  content: 'ï‘';
+}
+
+.accordion-numbered .accordion-item:nth-child(17) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(17) .accordion-title-text:before {
+  content: 'ï’';
+}
+
+.accordion-numbered .accordion-item:nth-child(18) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(18) .accordion-title-text:before {
+  content: 'ï“';
+}
+
+.accordion-numbered .accordion-item:nth-child(19) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(19) .accordion-title-text:before {
+  content: 'ï”';
+}
+
+.accordion-numbered .accordion-item:nth-child(20) .accordion-title-text:after,
+.accordion-numbered .accordion-item:nth-child(20) .accordion-title-text:before {
+  content: 'ï•';
+}
+
+.accordion-numbered
+  .accordion-nested:not(.accordion-numbered)
+  .accordion-title-text {
+  --accordion-number-icon-display: none;
+}
+
+.accordion-inset {
+  --accordion-number-icon-width: 1.1875em;
+  --accordion-number-side-padding: 0.4em;
+}
+
+.accordion-inset .accordion-content {
+  padding-left: calc(
+    var(--accordion-number-icon-width) + var(--accordion-number-side-padding)
+  );
+}
+
+.accordion-inset .accordion-nested:not(.accordion-inset) .accordion-content {
+  --accordion-number-icon-width: 0;
+  --accordion-number-side-padding: 0;
+}
+
+.accordion-nested .accordion-icon {
+  --accordion-icon-stroke-width: 2.75;
+}
+
+.accordion-reduced .accordion-nested .accordion-icon {
+  --accordion-icon-stroke-width: 2.25;
+}
